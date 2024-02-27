@@ -7,6 +7,10 @@
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
+# MIUI Camera
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=redwood_global
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
