@@ -9,6 +9,7 @@ $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
 # MIUI Camera
 PRODUCT_SYSTEM_PROPERTIES += \
+    ro.miui.notch=1 \
     ro.product.mod_device=redwood_global
 
 # Overlays
